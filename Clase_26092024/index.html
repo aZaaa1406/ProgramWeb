@@ -1,0 +1,89 @@
+<!-- Define el tipo de documento como HTML5. -->
+<!DOCTYPE html>
+
+<!-- Indica que el documento está escrito en inglés. -->
+<html lang="en">
+
+<!-- Sección donde se incluyen los metadatos y recursos externos para la página. -->
+<head>
+    <!-- Enlace a una hoja de estilo externa para dar formato visual a la página. -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Define el conjunto de caracteres como UTF-8 para soportar caracteres especiales. -->
+    <meta charset="UTF-8">
+    
+    <!-- Ajusta la página para que se vea bien en diferentes tamaños de pantalla, especialmente en dispositivos móviles. -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título de la página que aparece en la pestaña del navegador. -->
+    <title>Calculadora sencilla</title>
+</head>
+
+<!-- Sección del cuerpo, donde se encuentra el contenido visible de la página. -->
+<body>
+    <!-- Contenedor principal que agrupa la calculadora. -->
+    <div class="calculator">
+        <!-- Campo de texto donde se muestra el valor ingresado o el resultado de la operación. Está deshabilitado para que no se pueda editar manualmente. -->
+        <input type="text" id="display" class="calculator-screen" value="" disabled>
+
+        <!-- Contenedor para los botones de la calculadora. -->
+        <div class="calculator-button">
+            <!-- Botón para limpiar la pantalla de la calculadora, llama a la función clearDisplay(). -->
+            <button class="button" onclick="clearDisplay()">C</button>
+            
+            <!-- Botón para borrar el último carácter ingresado, llama a la función deleteLast(). -->
+            <button class="button" onclick="deleteLast()">DEL</button>
+            
+            <!-- Botón para agregar el símbolo de división (/) a la pantalla, llama a appendToDisplay('/'). -->
+            <button class="button" onclick="appendToDisplay('/')">/</button>
+            
+            <!-- Botón para agregar el símbolo de multiplicación (*) a la pantalla, llama a appendToDisplay('*'). -->
+            <button class="button" onclick="appendToDisplay('*')">*</button>
+            
+            <!-- Botón para agregar el número 7 a la pantalla, llama a appendToDisplay('7'). -->
+            <button class="button" onclick="appendToDisplay('7')">7</button>
+            
+            <!-- Botón para agregar el número 8 a la pantalla, llama a appendToDisplay('8'). -->
+            <button class="button" onclick="appendToDisplay('8')">8</button>
+            
+            <!-- Botón para agregar el número 9 a la pantalla, llama a appendToDisplay('9'). -->
+            <button class="button" onclick="appendToDisplay('9')">9</button>
+            
+            <!-- Botón para agregar el símbolo de resta (-) a la pantalla, llama a appendToDisplay('-'). -->
+            <button class="button" onclick="appendToDisplay('-')">-</button>
+            
+            <!-- Botón para agregar el número 4 a la pantalla, llama a appendToDisplay('4'). -->
+            <button class="button" onclick="appendToDisplay('4')">4</button>
+            
+            <!-- Botón para agregar el número 5 a la pantalla, llama a appendToDisplay('5'). -->
+            <button class="button" onclick="appendToDisplay('5')">5</button>
+            
+            <!-- Botón para agregar el número 6 a la pantalla, llama a appendToDisplay('6'). -->
+            <button class="button" onclick="appendToDisplay('6')">6</button>
+            
+            <!-- Botón para agregar el símbolo de suma (+) a la pantalla, llama a appendToDisplay('+'). -->
+            <button class="button" onclick="appendToDisplay('+')">+</button>
+            
+            <!-- Botón para agregar el número 1 a la pantalla, llama a appendToDisplay('1'). -->
+            <button class="button" onclick="appendToDisplay('1')">1</button>
+            
+            <!-- Botón para agregar el número 2 a la pantalla, llama a appendToDisplay('2'). -->
+            <button class="button" onclick="appendToDisplay('2')">2</button>
+            
+            <!-- Botón para agregar el número 3 a la pantalla, llama a appendToDisplay('3'). -->
+            <button class="button" onclick="appendToDisplay('3')">3</button>
+            
+            <!-- Botón de igual (=) para calcular el resultado de la operación, llama a calculateResult(). -->
+            <button class="button equal-button" onclick="calculateResult()">=</button>
+            
+            <!-- Botón para agregar el número 0 a la pantalla, llama a appendToDisplay('0'). -->
+            <button class="button" onclick="appendToDisplay('0')">0</button>
+            
+            <!-- Botón para agregar un punto decimal (.) a la pantalla, llama a appendToDisplay('.'). -->
+            <button class="button" onclick="appendToDisplay('.')">.</button>
+            
+        </div>
+    </div>
+</body>
+</html>
