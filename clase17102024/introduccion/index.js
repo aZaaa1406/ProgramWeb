@@ -55,5 +55,8 @@ form.addEventListener('submit', (e)=>{
     }else{
         message.textContent = 'Error en el login'
         message.style.color = 'red'
+
+        usernameInput.value = '';
+        passwordInput.value = '';
     }
 })
