@@ -4,8 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .lista-tareas{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    </style>
 </head>
 <body>
+    <form action="" id="formulario">
+        <input type="text" placeholder="Ingresa una tarea" id="iTarea">
+        <button id="button" type="submit">Enviar</button>
+    </form>
+    <div id="lista-tareas" class="lista-tareas"></div>
     <script src="./index.js"></script>
 </body>
 </html>
